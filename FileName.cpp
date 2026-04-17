@@ -184,7 +184,13 @@ int main() {
 		int  L = 0;
 		for (std::size_t i = 0; i < line.length();i++) {
 			int o = line[i];
-			S += tolower(o);
+			bool F = false;
+			if (F) {
+				S += tolower(o);
+			}
+			else {
+				S += o;
+			}
 			if (isalnum(o) || o == '_' || o == '.' || o == '#') {
 				continue;
 			}
