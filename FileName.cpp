@@ -68,6 +68,7 @@ enum Operation {
 	space,
 	coron,
 	semicoron,
+	lambada,
 };
 
 struct Line {
@@ -144,6 +145,7 @@ OperationMap createOperationMap() {
 	opMap["malloc"] = Operation::Malloc;
 	opMap["alloca"] = Operation::Alloca;
 	opMap["mainf"] = Operation::mainf;
+	opMap["lambada"] = Operation::lambada;
 	opMap["UCFS"] = Operation::UCFS; // User-Defined Control Flow Statement
 	// Add more operations as needed.
 	opMap["{"] = Operation::kakko;

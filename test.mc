@@ -33,6 +33,9 @@ let ToString(N){
 	return S;
 }
 
+let Add = lambada(A, B) {
+	return A + B;
+}
 
 let main() {
 	print(10.Fib().ToString());
