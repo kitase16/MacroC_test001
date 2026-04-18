@@ -69,6 +69,7 @@ enum Operation {
 	coron,
 	semicoron,
 	lambada,
+	MultipleArge,
 };
 
 struct Line {
@@ -163,6 +164,7 @@ OperationMap createOperationMap() {
 	opMap[" "] = Operation::space;
 	opMap[";"] = Operation::coron;
 	opMap[":"] = Operation::semicoron;
+	opMap["..."] = Operation::MultipleArge;
 	return opMap;
 }
 
